@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- eel.js -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="myheader mycenter">
+            <button onclick="generate_by_num()" type="button" class="btn btn-secondary">По Номеру</button>
+            <button onclick="generate_by_author()" type="button" class="btn btn-secondary">По автору</button>
+            <button onclick="generate_by_year()" type="button" class="btn btn-secondary">По году</button>
+            <button onclick="generate_by_author_and_year()" type="button" class="btn btn-secondary">По автору и году</button>
+            <button onclick="get_all()" type="button" class="btn btn-secondary">Показать всё</button>
+        </div>
+        <div class="mytable mycenter">
+            <table class="table-bordered" id="maintable">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Автор</th>
+                        <th>Год издания</th>
+                        <th>Номер книги</th>
+                        <th>Каталог</th>
+                        <th>Цена</th>
+                    </tr>
+                </thead>
+                <tbody id="maintable_body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
